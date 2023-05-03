@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String args[]){
+        byte b=0b01000000;   ////b=64
+        byte a=0b00001000;  //// a=8
+             //0b01001000 = 72
+        int out;
+        out=a|b;
+        System.out.println(out);
+    }
+}
