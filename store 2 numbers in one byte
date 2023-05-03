@@ -1,0 +1,22 @@
+import java.util.*;
+    public class Main{
+    public static void main(String args[]){
+        
+        byte a=0b00000000; //empty
+        byte num1=0b00000101; //here num1 is equal to 5 in decimal
+        int c;
+        c=a|num1;
+        System.out.println(c);
+        /// 4 bits are occupied by num1=5  
+        /// it looks like 0000-0101. still 4 bits are unoccupied.
+        
+        byte num2=0b00001001; //here num2 is equal to 9 in decimal
+        //the bits are on right side, so performing or with c will modify current bits of c.
+        // hence perform left shift, to shift bits of num2 on free side of our byte.
+        int shift=num2<<4;
+        int d=c|shift;
+        
+        System.out.println(d);
+        
+    }
+}
