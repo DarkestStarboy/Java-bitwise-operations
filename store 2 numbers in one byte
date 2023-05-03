@@ -6,7 +6,7 @@ import java.util.*;
         byte num1=0b00000101; //here num1 is equal to 5 in decimal
         int c;
         c=a|num1;
-        System.out.println(c);
+        System.out.println(String.format("%8s",Integer.toBinaryString(c)));
         /// 4 bits are occupied by num1=5  
         /// it looks like 0000-0101. still 4 bits are unoccupied.
         
@@ -16,7 +16,7 @@ import java.util.*;
         int shift=num2<<4;
         int d=c|shift;
         
-        System.out.println(d);
+        System.out.println(String.format("%s",Integer.toBinaryString(d)));  ////here 1001 = 9 & 0101 = 5
         
     }
 }
