@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        byte a=0b00001010;  ///a=72
+        byte b=0b00001010; /// b=8
+        
+        int out;
+        
+        out = a&b;
+        
+        System.out.println(String.format("%s",Integer.toBinaryString(out)));
+        System.out.print(out);
+    }
+}
