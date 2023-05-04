@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        
+        int a=10;
+        float f= 92.324f;
+        String str ="JAVA";
+        
+        System.out .printf("%d %f %s \n\n",a,f,str); //////simple printf function 
+        
+        System.out.printf("%1$d %2$s %3$f \n\n",a,str,f); //use argument indexing arg (a,str,f) is indexed as 1$ 2$ 3$
+        
+        System.out.printf("%10d \n\n",a); // using width arg a=10 is printed on 10 spaces using %10d
+        
+        System.out.printf("%010d\n\n",a);  // using flag 0 : these empty spaces will be filled with zeros
+        
+        int z=-10;
+        
+        System.out.printf("%d \n",z);  //printing the -z as its is
+        System.out.printf("%(d \n",z); //using flag (: it will sore the -ve value in ()
+         
+         int y=20;
+         System.out.printf("%+d \n",y); //using flag + : it will store the +ve value with +
+         
+         float q = 23.54634f;
+         System.out.printf("%f \n",q);  //print simple float value
+         System.out.printf("%6.2f \n\n",q);  //printting only 2-digits after the decimal
+         
+         String exm="hello";
+         System.out.printf("%s \n",exm); //printing simple hello
+         System.out.printf("%20s \n",exm);  //using width to print 20 spaces before printing hello
+         System.out.printf("%-20s \n",exm);  ///using flag - and width 20 to print 20 spaces after hello
+         
+         
+    }
+}
