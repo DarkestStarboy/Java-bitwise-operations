@@ -1,0 +1,119 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        
+        char c[]={'j','a','v','a'};    //Defining a String using char array
+        String str=new String(c);
+        System.out.println(str);
+        
+        String str1="CPP";          //Defining a String using a local method
+        System.out.println(str1);
+        
+        String str2=new String("Python");  //Defining a String using a string constructor
+        System.out.println(str2);
+        
+        byte b[]={66,67,68,69};
+        String str3=new String(b);
+        System.out.println(str3);
+        String str4=new String(b,0,3);   //Using indexing 0 and total character to be printed as 3
+        System.out.println(str4);
+     
+     int len=str1.length();
+     System.out.println(len);
+     System.out.println(str1.length());    //String method to check the lengtgh of a String
+     
+     String str5="HELLO";
+     System.out.println("str5::  "+str5);
+     System.out.println("str5 after change:: "+str5.toLowerCase());  //String method to change string into lowercase and uppercase
+     
+     String str6="  spaces  ";
+     System.out.println(str6);
+     System.out.println(str6.trim());  //String method to remove the spaces
+     
+     String str7="sub string";
+     System.out.println(str7);
+     System.out.println(str7.substring(4));  //method to get the subString from the given strign: provide the index of starting
+     
+     String str8="replace";
+     System.out.println(str8);
+     System.out.println(str8.replace("e","o"));  //Method to replace the char from the string provide old char and new char
+     
+     String str9="starts With";   ///same as endsWith() method
+     System.out.println(str9);
+     System.out.println(str9.startsWith("s")); //Method to check the string starts with; it is boolean return type
+     System.out.println(str9.startsWith("W",7));  // use index to find the other word in the given string 
+     
+     String str10="charAt";
+     System.out.println(str10);
+     System.out.println(str10.charAt(4)); //Method to get the character by providing the index
+     
+     String str11="indexOf";
+     System.out.println(str11.indexOf("x"));  //retuns the index of the provided character
+     System.out.println(str11.lastIndexOf(str11));
+     
+     String str12="compare";
+     String str13="COMPARE";
+     System.out.println(str12.equals(str13)); //method to compare 2 strings; boolean return type; case sensitive
+     System.out.println(str12.equalsIgnoreCase(str13)); //igonres the case and will return true for the same string with diff case
+     System.out.println(str12.compareTo(str13));  //returns the difference b/w the 2 strings as +1, -1, 0 
+     
+                                String str14="m";
+                                System.out.println(str14.matches(".")); //true for any digit a-z,0-9,and symbols single digit
+                                
+                                String str15="m";
+                                System.out.println(str15.matches("[match]"));  //true for exactly given character in any CharSequence given
+                                
+                                String str16="p";
+                                System.out.println(str16.matches("[^abc]"));  //not for the given character
+                                
+                                String str17="1g";
+                                System.out.println(str17.matches("[a-z0-9]*"));  //range
+                                
+                                String str18="A";
+                                System.out.println(str18.matches("A|B"));    //or
+                                
+                                String str19="exactly";
+                                System.out.println(str19.matches("exactly"));  //exactly given char
+                                
+                                String str20="n1";
+                                System.out.println(str20.matches("[a-z][0-9]"));  //using double range digits and alphabets
+                          
+                                String str21="az";
+                                System.out.println(str21.matches("[abc][xyz]*")); //either from the first CharSequence or the 2nd CharSequence
+                                
+                                
+                                                            String str22="1";
+                                                            System.out.println(str22.matches("\\d"));  //return true for digits
+                                                            
+                                                            String str23="a";
+                                                            System.out.println(str23.matches("\\D"));  //returns true for not digits
+                                                            
+                                                            String str24=" ";
+                                                            System.out.println(str24.matches("\\s")); //returns true for spaces
+                                                            
+                                                            String str25="";
+                                                            System.out.println(str.matches("\\S*"));  //returns trrue for not spaces
+                                                            
+                                                            String str26="q1";
+                                                            System.out.println(str26.matches("\\w*"));  //returns true for nums and alphabets
+                                                            
+                                                            String str27="#";
+                                                            System.out.println(str27.matches("\\W"));  //returns true for symbols 
+                                                            
+                String str28="abc";
+                System.out.println(str28.matches(".*")); //returns true if character is present in or or more times
+                
+                String str29="abc";
+                System.out.println(str29.matches("[abc]{3}"));  //returns true if char is present x tiimes
+                
+                String str30="rraa";
+                System.out.println(str30.matches("[a-z]{4,4}"));  //returns true if character is present in range min,max
+                
+                String str31="a";
+                System.out.println(str31.matches("a+"));  //returns true if char is prsent 1 or more times
+                
+                String str32="a";
+                System.out.println(str32.matches("a?"));  ///returns true if char is present 0 or 1 time
+     
+    }
+}
