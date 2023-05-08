@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+  String email="programmer12@gmail.com";
+  
+  int i=email.indexOf("@");
+  
+  String uName=email.substring(0,i);
+  String domain=email.substring(i+1,email.length());
+  
+  String k=email.substring(i-2,i);
+  System.out.println(k);
+  
+  System.out.println(uName);
+  System.out.println(domain);
+  
+int j=domain.indexOf(".");
+String gmail=domain.substring(0,j);
+System.out.println(gmail.equals("gmail"));
+    }
+    
+}
